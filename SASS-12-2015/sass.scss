@@ -1,0 +1,136 @@
+/**
+	S A S S
+**/
+
+/* -------------------- */
+
+
+$color_success: #090;
+
+.state_success {
+  color: lighten($color_success, 50%); //dark­en, etc...
+  background-color: $color_success;
+}
+
+// CSS
+.state_success {
+  color: #9f9;
+  background-color: #090;
+}
+
+
+
+/* -------------------- */
+
+
+
+%prominent {
+  font-style: bold;
+  font-size: 1.5rem;
+}
+
+.important {
+  color: #900;
+  @extend %prominent;
+}
+
+.notice {
+  color: #090;
+  @extend %prominent;
+}
+
+
+
+//CSS
+.important, .notice {
+  font-style: bold;
+  font-size: 1.5rem;
+}
+
+.important {
+  color: #900;
+}
+
+.notice {
+  color: #090;
+}
+
+/* -------------------- */
+
+
+.hoverable {
+  color: #fff;
+  &:hover {
+    color: #ff0;
+  }
+}
+
+
+//CSS
+.hoverable {
+  color: #fff;
+}
+
+.hoverable:hover {
+  color: #ff0;
+}
+
+
+/* -------------------- */
+
+.hoverable {
+  color: #fff;
+
+  .special & {
+    border: 1px solid #f00;
+  }
+}
+
+
+//CSS
+.hoverable {
+  color: #fff;
+}
+
+.special .hoverable {
+  border: 1px solid #f00;
+}
+
+
+/* -------------------- */
+
+
+#main {
+  $width: 5em !global;
+  width: $width;
+}
+
+#sidebar {
+  width: $width;
+}
+
+//CSS
+#main {
+  width: 5em;
+}
+
+#sidebar {
+  width: 5em;
+}
+
+/* -------------------- */
+
+@function calculate-width ($col-span) {
+    @return 100% / $col-span;
+}
+
+.span-two {
+    width: calculate-width(2); // spans 2 columns, width = 50%
+}
+
+.span-three {
+    width: calculate-width(3); // spans 3 columns, width = 33.3%
+}
+
+
+
