@@ -1,0 +1,24 @@
+{
+	"nav": [
+		{
+			"label" : "Jan"
+		},
+		{
+			"label" : "Fev"
+		},
+		{
+			"label" : "Mar"
+		},
+		{
+			"label" : "Avr"
+		}
+
+	],
+
+	"pics" : [
+		"pics/jan.jpg",
+		"pics/fev.jpg",
+		"pics/mar.jpg",
+		"pics/avr.jpg"
+	]
+}

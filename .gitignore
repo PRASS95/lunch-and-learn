@@ -1,0 +1,54 @@
+
+# Numerous always-ignore extensions
+*.diff
+*.err
+*.orig
+*.log
+*.rej
+*.swo
+*.swp
+*.zip
+*.vi
+*.temp
+*~
+*.sass-cache
+composer.lock
+install.log
+cities.mmdb
+countries.mmdb
+
+# CMS Specifics
+config.php
+
+# OS or Editor folders
+.DS_Store
+._*
+Thumbs.db
+.cache
+.project
+.settings
+.tmproj
+*.map
+
+*.esproj
+nbproject
+*.sublime-project
+*.sublime-workspace
+
+# Folders to ignore
+.hg
+.svn
+.CVS
+.idea
+node_modules
+dist
+npm-debug.log
+app/uploads/
+app/assets/media/
+error_log
+vendor
+public/backend
+public/img/generated
+public/uploads
+public/sounds/tweets
+
