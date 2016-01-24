@@ -4,7 +4,7 @@ import Controller from './ctrl/Controller';
 import DataManager from './model/DataManager';
 
 /**
- * 
+ * LUNCH AND LEARN - MVC
  **/
 
 class Main {
@@ -23,7 +23,7 @@ class Main {
 
 		console.log("Dom ready");
 
-		// 1) Create view
+		// 1) Create views
 		this.nav = new Nav();
 		this.content = new Content();
 
@@ -38,11 +38,11 @@ class Main {
 
 	start () {
 
-		console.log('start');
+		console.log('Building');
 
-		this.nav.build( DataManager.data.nav );
+		this.nav.build( DataManager.getNavData() );
 
 	}
 }
 
-var app = new Main();
+var app = new Main(); // or new Main();

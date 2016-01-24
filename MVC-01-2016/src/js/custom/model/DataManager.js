@@ -19,6 +19,10 @@ class DataManager {
 
 	}
 
+    static getNavData () {
+        
+        return DataManager.data.nav;
+    }
 
 	static getPic ( itemID ) {
 

@@ -27,6 +27,7 @@ class Nav {
 
 		const targetID = event.target.getAttribute('data-id');
 
+		console.log('----');
 		console.log('Nav :: Click on item #', targetID);
 
 		$(window).trigger('new_content_request', targetID );
