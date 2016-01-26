@@ -1,0 +1,15 @@
+<button>
+    <a href="/person/create">Create</a>
+</button>
+<ul>
+<?php foreach($persons as $person): ?>
+    <li>
+        <a href="/person/update/<?php echo $person->get('id'); ?>">
+            <?php echo $person->get('name'); ?>
+        </a>
+        <a href="/person/delete/<?php echo $person->get('id'); ?>">
+            X
+        </a>
+    </li>
+<?php endforeach; ?>
+</ul>
