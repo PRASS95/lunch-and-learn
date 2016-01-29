@@ -1,0 +1,8 @@
+<form method="post" action="/person/update">
+    <input type="hidden" name="id" value="<?php echo $person->get('id'); ?>">
+    <input type="text" name="name" value="<?php echo $person->get('name'); ?>" />
+    <input type="text" name="age" value="<?php echo $person->get('age'); ?>" />
+    <input type="text" name="weight" value="<?php echo $person->get('weight'); ?>" />
+    <input type="text" name="height" value="<?php echo $person->get('height'); ?>" />
+    <input type="submit" value="Save" />
+</form>

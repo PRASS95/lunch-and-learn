@@ -20,10 +20,4 @@ class Person extends Model
         $this->weight = $weight;
         $this->height = $height;
     }
-
-    public function getBodyMassIndex()
-    {
-        // Calculate the body mass index
-        return $this->weight / ($this->height * $this->height);
-    }
 }

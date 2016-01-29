@@ -4,7 +4,8 @@ namespace Project\Controllers;
 
 use Framework\Controller;
 
-use Projects\Models\Person;
+use Project\Models\Person;
+use Project\Helpers\Person as PersonHelper;
 
 class PersonController extends Controller
 {
